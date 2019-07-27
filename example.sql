@@ -22,11 +22,11 @@ INSERT INTO Product VALUES ('0008', '圆珠笔', '办公用品', 100, NULL,'2009
 
 CREATE TABLE ShopProduct 
 (
-	shop_id         CHAR(4)         NOT NULL, 
+    shop_id         CHAR(4)         NOT NULL, 
     shop_name       VARCHAR(200)    NOT NULL, 
     product_id      CHAR(4)         NOT NULL, 
     quantity        INTEGER         NOT NULL,
-	PRIMARY KEY (shop_id, product_id)
+    PRIMARY KEY (shop_id, product_id)
 );
 
 INSERT INTO ShopProduct (shop_id, shop_name, product_id, quantity) VALUES ('000A', '东京', '0001', 30);
