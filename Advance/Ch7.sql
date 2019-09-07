@@ -31,4 +31,4 @@ WHERE NOT EXISTS (SELECT skill
                   FROM EmpSkills ES2
                   WHERE ES1.emp = ES2.emp)
 GROUP BY emp
-HAVING COUNT(*) = (SELECT COUNT(*) FROM EmpSkills);
+HAVING COUNT(*) = (SELECT COUNT(*) FROM Skills);
